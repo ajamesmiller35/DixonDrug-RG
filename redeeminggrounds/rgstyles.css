@@ -149,6 +149,7 @@ li {
 
 .oz-coffee{
     height: 450px;
+    max-width: 100%;
 }
 
 .social-icon{
@@ -175,4 +176,14 @@ li {
     margin-right: auto;
     display: block;
     margin-bottom: 15px;
+}
+
+.vertical-division{
+    width: 5px;
+    height: 90%;
+    background-color: white;
+}
+
+.boyers-box{
+    background-color: white;
 }
