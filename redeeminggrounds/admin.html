@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="rgstyles.css">
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Syncopate:400,700" rel="stylesheet">
     <link rel="icon" href="images/rg-icon-green.png">
     <title>Redeeming Grounds Coffee</title>
   </head>
@@ -43,6 +44,11 @@
     <div class="chalkboard">
         <div class="container">
             <p class="rg-info text-white h1">Administrator Contact:</p>
+            <div class="divider"></div>
+              <div class="footer-info-box row">               
+                  <a id="admin-mail" href="mailto:admin@dixondrug.com"><img class="social-icon" src="images/email-icon.png"/></a>
+            </div><!--footer-info-box-->
+              <div class="divider"></div>
           </div><!--row-->
         </div><!--container-->
     </div><!--chalkboard-->
@@ -50,10 +56,68 @@
     
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script></script>
+    <script src="../plugins/jquery/jquery.js"></script>
+    <script src="../plugins/popper/popper.min.js"></script>
+    <script src="../plugins/bootstrap/js/bootstrap.js"></script>
+    <script src="../plugins/waypoints/jquery.waypoints.min.js"></script>
+    <script src="../plugins/slick/slick.min.js"></script>
+    <script src="../plugins/smoothscroll/SmoothScroll.min.js"></script>
     <script src="fix-nav.js"></script>
+    <script src="clickscroll-rg.js"></script>
+    <script src="collapse-rg.js"></script>
+    <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/5.11.0/firebase-app.js"></script>
+
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/5.11.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.11.0/firebase-database.js"></script>
+
+    <script>
+            $(document).on('click', '#create', function(event){
+                event.preventDefault();
+                window.location.href="create.html";
+            });
+    </script>
+
+    <script>
+     // Your web app's Firebase configuration
+    var firebaseConfig = {
+    apiKey: "AIzaSyBFpRUDRWdeGNtfWg7CcM_m-1Y-sVmcTPg",
+    authDomain: "redeeming-grounds.firebaseapp.com",
+    databaseURL: "https://redeeming-grounds.firebaseio.com",
+    projectId: "redeeming-grounds",
+    storageBucket: "redeeming-grounds.appspot.com",
+    messagingSenderId: "623286935158",
+    appId: "1:623286935158:web:c5301b5e11b696f2"
+  };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+
+    $(document).on('submit', '#sign-on', function(event){
+        event.preventDefault();
+    firebase.auth().signInWithEmailAndPassword($('#sign-in-email').val(), $('#sign-in-password').val()).catch(function(error) {
+        // Handle Errors here.
+        var errorCode = error.code;
+        var errorMessage = error.message;
+        console.log($('#sign-in-email').val());
+        console.log($('#sign-in-password').val());
+        $('#bad-login').css('display', 'block');
+    });
+    });
+
+    firebase.auth().onAuthStateChanged(function(user) {
+        console.log(user);
+
+        if(user != null){
+            window.location.href="update.html";
+        }
+        else{
+            //$('#bad-login').css('display', 'block');
+        }
+    });
+    
+    </script>
   </body>
 </html>

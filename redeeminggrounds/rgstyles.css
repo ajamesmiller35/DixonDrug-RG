@@ -110,6 +110,10 @@ li {
     margin-left: auto;
 }
 
+.rg-banner-scrolled{
+    height: 0px !important;
+}
+
 .rg-info{
     font-family: 'Indie Flower', cursive;
     text-align: center;
@@ -150,6 +154,9 @@ li {
 .oz-coffee{
     height: 450px;
     max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
 .social-icon{
@@ -164,6 +171,10 @@ li {
     margin-bottom: 30px;
 }
 
+.boyers-box{
+    margin-bottom: 50px;
+}
+
 .nav-chalkboard{
     background-color: #34393a;
 }
@@ -174,16 +185,169 @@ li {
     background-color: white;
     margin-left: auto;
     margin-right: auto;
-    display: block;
     margin-bottom: 15px;
+}
+
+#bad-login{
+    display: none;
+}
+
+#bad-password{
+    display: none;
+}
+
+.divider{
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 992px){
+    .tip-div{
+        display: none !important;
+    }
+    .tip-horizontal-div{
+        display: block !important;
+    }
+    .graph{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width: 991px){
+    .tip-horizontal-div{
+        display: none !important;
+    }
 }
 
 .vertical-division{
     width: 5px;
     height: 90%;
     background-color: white;
+    display: inline-block;
+    margin-left: 60px;
 }
 
 .boyers-box{
     background-color: white;
+}
+
+.logout-box{
+    position: fixed;
+    background-color: black;
+    width: 100%;
+    z-index: 99999;
+    height: 50px;
+}
+
+.button-box{
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.update-btn{
+    width: 45%;
+    width: 45%;
+    margin-top: 5px;
+}
+
+.push{
+    height: 50px;
+}
+
+#add-photo{
+    width: 300px;
+    margin: 100px;
+    border-style: dashed;
+    border-width: 5px;
+    border-color: white;
+
+}
+
+#event-photo{
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.event-info{
+    margin: 15%;
+}
+
+#graph1{
+    height: 90%;
+    width: 100%;
+    background-color: white;
+}
+
+#graph2{
+    height: 90%;
+    width: 100%;
+    background-color: white;
+}
+
+.graph-text{
+    color: black;
+    font-family: 'Syncopate', sans-serif;
+    font-weight: 700 !important;
+    font-size: 1.5rem;
+    padding-top: 10px;
+}
+
+.push-nav{
+    height: 0px;
+}
+
+.footer{
+    line-height: 1.25;
+}
+
+.footer p{ 
+    margin-bottom: 0px !important;
+}
+
+.footer-info-box{
+    height: 100px;
+}
+
+.icon-box{
+    width: 160px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.icon-box a{
+    width: 75px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#admin-mail{
+    width: 75px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+@media (max-width: 1202px){
+
+.footer-header{
+    font-size: 1rem;
+}
+
+}
+
+@media (max-width: 1004px){
+    .footer-info-box{
+        height: 110px;
+    }
 }

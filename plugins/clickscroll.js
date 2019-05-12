@@ -12,6 +12,7 @@
            $('html, body').animate({
              scrollTop: ($(target).offset().top - $("#top-nav").height())
            }, 1000);
+           console.log('height:' + $('#top-nav').height());
         });
       
 
