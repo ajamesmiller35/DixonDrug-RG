@@ -11,9 +11,56 @@ body{
     background-size: cover;
 }
 
+#top{
+    z-index: 999999;
+    position: fixed;
+    top: 15px;
+    right: 0;
+}
+
+#back{
+    z-index: 999999;
+    position: fixed;
+    top: 15px;
+    left: 0;
+}
+
+#top img{
+    height: 55px;
+    display: none;
+}
+
+#back img{
+    height: 55px;
+}
+
+@media (max-width: 1100px){
+    #top img{
+        height: 45px;
+    }
+    #top{
+        top: 5px;
+    }
+    #back img{
+        height: 45px;
+    }
+    #back{
+        top: 5px;
+        right: 55px;
+        left: unset;
+    }
+}
+
+.back-scrolled{
+    top: 15px !important;
+    left: 0 !important;
+    right: unset !important;
+}
+
 nav{
     width: 100%;
     z-index: 99;
+    min-height: 75px;
 }
 
 .nav-scrolled{

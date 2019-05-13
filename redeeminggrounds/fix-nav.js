@@ -15,6 +15,11 @@
                 $('#chalkboard-main').removeClass('chalkboard');
                 $('.push-nav').css('height', pushNav);
                 $('#message-box').css('display', 'none');
+                $('#top img').css('display', 'block');
+                $('#back img').attr('src', 'images/back-chalk.png');
+                $('#back').removeClass('back-scrolled');
+
+                
                
             }
             else {
@@ -24,6 +29,10 @@
                 $('#rg-banner').removeClass('rg-banner-scrolled');
                 $('.push-nav').css('height', '0px');
                 $('#message-box').css('display', 'block');
+                $('#top img').css('display', 'none');
+                $('#back img').attr('src', 'images/back.png');
+                $('#back').addClass('back-scrolled');
+                
             }
         });
                 

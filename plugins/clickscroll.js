@@ -14,6 +14,14 @@
            }, 1000);
            console.log('height:' + $('#top-nav').height());
         });
+
+        $('#top').on('click', function(e) {
+          e.preventDefault();
+
+          $('html, body').animate({
+            scrollTop: 0
+          }, 1000);
+       });
       
 
   });

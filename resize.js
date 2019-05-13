@@ -8,8 +8,10 @@ $(document).ready(function(){
     
     if (scrollTop >= 100) {
       $('.dd-top-logo').addClass('dd-top-logo-scrolled');
+      $('#top img').css('display', 'block');
     } else  if (scrollTop < 100){
       $('.dd-top-logo').removeClass('dd-top-logo-scrolled');
+      $('#top img').css('display', 'none');
     } 
     
   }); 

@@ -29,6 +29,7 @@
   </head>
 
   <body>
+    <a href="javascript:void(0)" id="top"><img id="up-white" src="images/up-white.png"></a>
   <div class="push"></div>
   <div id="top-nav">
       <a class="top-logo" href="index.php"><img src="images/dixondrugglow.png" class="dd-top-logo"/></a>
@@ -54,11 +55,11 @@
             <a class="nav-link nav-link-pill scrollTo" href="#about">About</a>
           </li>
           <li class="nav-item">
-            <!--<a class="nav-link scrollTo" href="#coffeeshop">Coffee Shop</a>-->
-            <a class="nav-link" href="redeeminggrounds/index.html">Coffee Shop</a>
+            <a class="nav-link scrollTo" href="#hardware">True Value Hardware</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link scrollTo" href="#hardware">True Value Hardware</a>
+            <!--<a class="nav-link scrollTo" href="#coffeeshop">Coffee Shop</a>-->
+            <a class="nav-link" href="redeeminggrounds/index.html">Coffee Shop</a>
           </li>
         </ul>
       </div>
@@ -232,8 +233,8 @@
     <?php
       $host = '127.0.0.1';
       $dbname   = 'refills';
-      $user = 'root';
-      $pass = '';
+      $user = 'ajamesmiller35';
+      $pass = 'CarlyQ35.';
       $charset = 'utf8';
       
       $dsn = 'mysql:host=' . $host . ';dbname=' . $dbname;
@@ -351,40 +352,14 @@
     <div class="col-lg-12">
       <p>Founded in 1986, Great Plains Pharmacies, Inc. is aiming to serve our customers and patients with the quality service and care they deserve. Founded by Chris and Kellee Dixon, we pride ourselves in being a workplace that works hard, has fun, and serves our customers and patients with excellent quality care at all times.</p>
     </div>
-    </main><!-- /.container -->
-    <div class="wide-row" id="coffeeshop">
-          <p class="introducing">I n t r o d u c i n g:</p>
-        </div>
-    <div class="grounds-bg">
-          <img class="grounds" src="images/rg-tin-logo.png"/>
-        </div>
-        <div class="container-fluid">
-            <div class="row chalkboard">
-              <div class="col-lg-6">
-                <img class="cup" src="images/coffee-cup-white.png"/>
-              </div>
-              <div class="col-lg-6">
-                <p class="rg-info">Tribune's top spot for the best quality coffee at reasonable prices!</p>
-                <p class="rg-hours">Now open at 7:00 am through the back door and from 8:30 am to 5:00 pm through the front door.</p>
-                <p class="rg-hours">Visit our website:</p> <a class="rg-hours" href="">redeeminggrounds.com</a>
-              </div>
-            </div>
-            <div class="row view-menu">
-              <p class="menu-text">View Menu:</p>
-            </div>
-              <div class="chalkboard-fade">
-              <div class="row">
-              <a class="lightbox" id="menu-small" href="#menu"><img src="images/menu.png"/></a> 
-                <div class="lightbox-target" id="menu">
-                <a class="lightbox-close" href="#menu-small"><img src="images/menu.png"/></a>
-                <a href="#menu-small"><img id="close-menu" src="images/close.png"/></a>
-              </div>
-              </div>
-              </div>
-        </div>
+    <img src="images/division.png" class="division"/>
+    
         <div class="row" id="hardware">
           <img id="dd-tv-logo" src="images/dd-tv-logo.png"/>
+          <img src="images/division.png" class="division"/>
+          <img id="bargains-of-month" src="http://ww3.truevalue.com/Portals/0/bom/BOM_interior_c7577fc9-1724-4de9-859c-783ff23df456.jpg?v=412">
         </div>
+        </main><!-- /.container -->
         
 
     <!--footer starts from here-->
