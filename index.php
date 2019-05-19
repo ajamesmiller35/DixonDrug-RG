@@ -231,7 +231,7 @@
     <button type="submit" class="btn btn-dark">Add Number</button>
     <br><br>
     <?php
-      $host = '127.0.0.1';
+      /*$host = '127.0.0.1';
       $dbname   = 'refills';
       $user = 'ajamesmiller35';
       $pass = 'CarlyQ35.';
@@ -269,7 +269,7 @@
 
       echo "</table>";
 
-    }
+    }*/
 
     ?>
   </div><!--/.row -->
