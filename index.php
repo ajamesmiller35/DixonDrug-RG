@@ -7,8 +7,19 @@
 
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141686763-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-141686763-1');
+    </script>
     <meta charset="utf-8">
+    <meta name="description" content="Small Town Pharmacy and Hardware Store in Tribune Kansas">
+    <meta name="keywords" content="Dixon Drug, True Value, Good Neighbor Pharmacy, drugs, pharmaceuticals, over-the-counter, otc, drug store, small town, hardware, toys, gifts, cards, plumbing, tools, medicine, sporting goods, office supplies, craft supplies, clothing, retail, home, outdoor, Tribune, Kansas, Greeley County">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -231,7 +242,7 @@
     <button type="submit" class="btn btn-dark">Add Number</button>
     <br><br>
     <?php
-      /*$host = '127.0.0.1';
+      $host = '127.0.0.1';
       $dbname   = 'refills';
       $user = 'ajamesmiller35';
       $pass = 'CarlyQ35.';
@@ -269,7 +280,7 @@
 
       echo "</table>";
 
-    }*/
+    }
 
     ?>
   </div><!--/.row -->
