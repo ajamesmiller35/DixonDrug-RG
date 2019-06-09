@@ -28,6 +28,10 @@
     transition: width .5s;
 }
 
+#my-gnp-logo{
+    width: 50%;
+}
+
 .push{
     width: 100%;
     height: 100%;

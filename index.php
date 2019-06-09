@@ -3,6 +3,7 @@
   if(!isset($_SESSION['message'])){
     $_SESSION['message'] = "";
   }
+  session_destroy();
 ?>
 
 <!doctype html>
@@ -213,83 +214,17 @@
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3144.8655580873974!2d-101.75181284903222!3d37.98026670798328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87095e7f0e7edfe1%3A0xc1635023dcfcc46f!2sHamilton+County+Drug!5e0!3m2!1sen!2sus!4v1543376761575" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
       </div>
     </div>
-    <div class="sessionmessage">
-    <?php
-      if(isset($_SESSION['message'])){
-      echo "<h2 class=\"center\">" . $_SESSION['message'] . "</h2>";
-      }
-      if($_SESSION['message'] == "Request Sent Succefully!"){
-        session_destroy();
-        session_start();
-        $_SESSION['message'] = "";
-      }
-    ?>
     </div>
 
     <div class="row" id="refills">
     <div class="header">
-    <h1>Refill Request Form:</h1>
+    <h1>Online Refill Requests:</h1>
     </div>
-      <form action="addRxNum.php" method="post">
-  <div class="form-group">
-    <label for="rxNum">Prescription Number</label>
-    <input type="text" class="form-control" id="rxNum" name="rxNum" aria-describedby="rxHelp" placeholder="Enter Rx Number">
-    <small id="rxHelp" class="form-text text-muted">Locate the six digit prescription number on your bottle. For controlled drugs it is not necessary to include the "C" at the beginning of the number.</small>
-    <br>
-    <input type="text" class="form-control" id="rxMessage" name="rxMessage" aria-describedby="rxMessage" placeholder="Special Message">
-    <small id="rxHelp" class="form-text text-muted">Enter any special requests or messages for the pharmacist here.</small>
-    <br>
-    <button type="submit" class="btn btn-dark">Add Number</button>
-    <br><br>
-    <?php
-      $host = '127.0.0.1';
-      $dbname   = 'refills';
-      $user = 'ajamesmiller35';
-      $pass = 'CarlyQ35.';
-      $charset = 'utf8';
-      
-      $dsn = 'mysql:host=' . $host . ';dbname=' . $dbname;
-      $opt = [
-          PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
-          PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
-          PDO::ATTR_EMULATE_PREPARES   => false,
-      ];
-      $pdo = new PDO($dsn, $user, $pass, $opt);
-
-      if(isset($_SESSION['sessionID'])){
-      $sql = "SELECT * FROM rxnumbers WHERE session_ID = " . $_SESSION['sessionID'];
-      $stmt = $pdo->prepare($sql);
-      $stmt->execute([]);
-      $rxList = $stmt->fetchAll();
-
-      echo "<table class='table'>";
-      echo "<thead>";
-      echo "<tr>";
-      echo "<th scope='col'>Rx Number</th>";
-      echo "<th scope='col'>Special Message</th>";
-      echo "</tr>";
-      echo "</thead>";
-
-      for($i = 0; $i < sizeof($rxList); $i++){
-        echo "<tr>";
-        echo "<td>" . $rxList[$i]['rxnumber'] . "</td>";
-        echo "<td>" . $rxList[$i]['message']. "</td>";
-        echo "<td><a href=\"delete.php?rxID=" .  $rxList[$i]['id'] . "\">Delete</a></td>";
-        echo "</tr>";
-      }
-
-      echo "</table>";
-
-    }
-
-    ?>
-  </div><!--/.row -->
-</form>
-  </div>
-  <div class="row">
-<form action="mail.php" method="post">
-      <button type="submit" class="btn btn-dark">Send Refill Request</button>
-  </form>
+    <div class="refillrx-head">
+    <h2 class="text-center feature-head">Looking to make refill requests online?</h2>
+    <h3 class="text-center ">Click the icon below and fill out the form to send a request!</h3>
+    <a href="https://www.mygnp.com/pharmacies/dixon-drug-tribune-ks-67879/#prescription"><img id="my-gnp-logo" src="images/mygnplogo.png"/></a>
+    </div>
       </div><!--/.row -->
       <div class="row">
         <img src="images/division.png" class="division"/>
@@ -343,6 +278,9 @@
           <div class="col-sm-6">
           <a href="https://itunes.apple.com/us/app/refillrx/id1051322965?mt=8"><img src="images/appstore.png" class="app-logo" id="app-store"/></a>
           </div><!--/.col -->
+      </div><!--/.row -->
+      <div class="row">
+        <img src="images/division.png" class="division"/>
       </div><!--/.row -->
       <div class="row" id="about">
         <div class="header">

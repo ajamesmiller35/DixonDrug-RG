@@ -56,13 +56,13 @@ $mail->SMTPDebug = 2;
 $mail->Debugoutput = 'html';
 
 //Set the hostname of the mail server
-$mail->Host = 'smtp.gmail.com';
+$mail->Host = 'dixondrug.com';
 // use
 // $mail->Host = gethostbyname('smtp.gmail.com');
 // if your network does not support SMTP over IPv6
 
 //Set the SMTP port number - 587 for authenticated TLS, a.k.a. RFC4409 SMTP submission
-$mail->Port = 587;
+$mail->Port = 465;
 
 //Set the encryption system to use - ssl (deprecated) or tls
 $mail->SMTPSecure = 'tls';
@@ -71,10 +71,10 @@ $mail->SMTPSecure = 'tls';
 $mail->SMTPAuth = true;
 
 //Username to use for SMTP authentication - use full email address for gmail
-$mail->Username = "ajamesmiller35@gmail.com";
+$mail->Username = "admin@dixondrug.com";
 
 //Password to use for SMTP authentication
-$mail->Password = "THADx93.";
+$mail->Password = "CarlyQ35.";
 
 //Set who the message is to be sent from
 $mail->setFrom('no-reply@dixondrug.com', 'Refill Bot');
@@ -83,7 +83,7 @@ $mail->setFrom('no-reply@dixondrug.com', 'Refill Bot');
 $mail->addReplyTo('replyto@example.com', 'First Last');
 
 //Set who the message is to be sent to
-$mail->addAddress('ajamesmiller35@gmail.com', 'Andrew Miller');
+$mail->addAddress('admin@dixondrug.com', 'Andrew Miller');
 
 //Set the subject line
 $mail->Subject = 'PHPMailer GMail SMTP test';
@@ -119,6 +119,6 @@ function makeBody($input){
       return $output;
 }
 
-header("location: refills.php");
+header("location: index.php#refills");
 
 ?>

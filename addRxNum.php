@@ -66,6 +66,6 @@ $sql = 'INSERT INTO rxnumbers(session_ID, rxnumber, message) VALUES(:session_ID,
 $stmt = $pdo->prepare($sql);
 $stmt->execute(['session_ID' => $session_ID, 'rxnumber' => $rxNum, 'message' => $rxMessage]);
 
-header("location: refills.php");
+header("location: index.php#refills");
 
 ?>

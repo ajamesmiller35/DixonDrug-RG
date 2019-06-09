@@ -5,8 +5,8 @@ session_start();
 //database connection settings
 $host = '127.0.0.1';
 $dbname   = 'refills';
-$user = 'root';
-$pass = '';
+$user = 'ajamesmiller35';
+$pass = 'CarlyQ35.';
 $charset = 'utf8';
 
 $dsn = 'mysql:host=' . $host . ';dbname=' . $dbname;
@@ -120,6 +120,6 @@ function makeBody($input){
       return $output;
 }
 
-header("location: refills.php");
+header("location: index.php#refills");
 
 ?>
