@@ -210,10 +210,19 @@ li {
     margin-bottom: 50px;
     border: 20px solid transparent;
     
-    -webkit-border-image: url(images/chalkboard-frame-dark.png) 30 stretch; /* Safari 3.1-5 */
-    -o-border-image: url(images/chalkboard-frame-dark.png) 30 stretch; /* Opera 11-12.1 */
+    /*-webkit-border-image: url(images/chalkboard-frame-dark.png) 30 stretch;
+    -o-border-image: url(images/chalkboard-frame-dark.png) 30 stretch;
     border-image: url(images/chalkboard-frame-dark.png) 30 stretch;
-    background-color: #34393a;
+    border-style: solid;
+    border-width: 15px 15px 15px 15px;
+    -moz-border-image: url(chalkboard-frame-dark.png) 5 5 5 5 stretch stretch;
+    -webkit-border-image: url(chalkboard-frame-dark.png) 5 5 5 5 stretch stretch;
+    -o-border-image: url(chalkboard-frame-dark.png) 5 5 5 5 stretch stretch;
+    border-image: url(chalkboard-frame-dark.png) 5 5 5 5 stretch stretch;
+    background-color: #34393a;*/
+    background-image: url(images/chalkboard-frame-dark.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
     width: 90% !important;
     display: block;
     margin-left: auto;

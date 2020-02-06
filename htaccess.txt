@@ -1,0 +1,8 @@
+Options +ExecCGI
+AddHandler fcgid-script .html
+FCGIWrapper /usr/local/cpanel/cgi-sys/php5 .html
+
+
+RewriteEngine On
+RewriteCond %{HTTPS} !on
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
