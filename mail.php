@@ -5,8 +5,8 @@ session_start();
 //database connection settings
 $host = '127.0.0.1';
 $dbname   = 'refills';
-$user = 'ajamesmiller35';
-$pass = 'CarlyQ35.';
+$user = 'root';
+$pass = '';
 $charset = 'utf8';
 
 $dsn = 'mysql:host=' . $host . ';dbname=' . $dbname;
@@ -105,7 +105,6 @@ if (!$mail->send()) {
 } else {
     $_SESSION['message'] = "Request Sent Succefully!";
     $_SESSION['sessionID']= NULL;
-    session_destroy();
 }
 //function to make the body of the message using values retrieved from database
 function makeBody($input){
@@ -120,6 +119,6 @@ function makeBody($input){
       return $output;
 }
 
-header("location: index.php#refills");
+header("location: refills.php");
 
 ?>
