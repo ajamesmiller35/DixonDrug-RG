@@ -394,7 +394,14 @@ h1{
     padding-top: 75px;
     padding-bottom: 50px;
     text-align: center;
-    font-size: 3em !important;
+    font-size: 2em;
+    width: 100%;
+}
+
+@media only screen and (max-width: 560px){
+    .feature-head{
+        font-size: 1.5em;
+    }
 }
 
 .refillrx-head{
@@ -729,4 +736,9 @@ a.lightbox img {
     .features{
         line-height: 1.5em;
     }
+}
+
+.map{
+    width: 100%;
+    min-height: 300px;
 }

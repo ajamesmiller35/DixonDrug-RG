@@ -171,7 +171,7 @@
         <p>Fax: (620)376-2584</p>
       </div>
       <div class="col-lg-4">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3123.7816187564513!2d-101.75417894902058!3d38.46960267955141!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x870b942cd4cbb84b%3A0xa73aab729353b16c!2sDixon+Drug!5e0!3m2!1sen!2sus!4v1543374998893" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3123.7816187564513!2d-101.75417894902058!3d38.46960267955141!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x870b942cd4cbb84b%3A0xa73aab729353b16c!2sDixon+Drug!5e0!3m2!1sen!2sus!4v1543374998893" frameborder="0" style="border:0" allowfullscreen></iframe>
       </div>
     </div>
     <img src="images/division.png" class="division"/>
@@ -187,7 +187,7 @@
         <p>Fax: (785)852-4218</p>
       </div>
       <div class="col-lg-4">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3105.231240081966!2d-101.75421234901036!3d38.8958270545414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x870b6d81e5d876a5%3A0x21b0df84eb8f9826!2sDixon+Drug!5e0!3m2!1sen!2sus!4v1543376714959" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3105.231240081966!2d-101.75421234901036!3d38.8958270545414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x870b6d81e5d876a5%3A0x21b0df84eb8f9826!2sDixon+Drug!5e0!3m2!1sen!2sus!4v1543376714959" frameborder="0" style="border:0" allowfullscreen></iframe>
       </div>
     </div>
     <img src="images/division.png" class="division"/>
@@ -203,7 +203,7 @@
         <p>Fax: (620)384-7525</p>
       </div>
       <div class="col-lg-4">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3144.8655580873974!2d-101.75181284903222!3d37.98026670798328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87095e7f0e7edfe1%3A0xc1635023dcfcc46f!2sHamilton+County+Drug!5e0!3m2!1sen!2sus!4v1543376761575" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3144.8655580873974!2d-101.75181284903222!3d37.98026670798328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87095e7f0e7edfe1%3A0xc1635023dcfcc46f!2sHamilton+County+Drug!5e0!3m2!1sen!2sus!4v1543376761575" frameborder="0" style="border:0" allowfullscreen></iframe>
       </div>
     </div>
     </div>
@@ -255,9 +255,11 @@
         <img src="images/division.png" class="division"/>
       </div><!--/.row -->
       <div class="row">
-      <div class="refillrx-head">
-        <h2 class="feature-head">Looking for a more simple experience?</h2>
-        <h3>Try refillRx, also availabe on Google Play and the App Store.</h3>
+        <div class="col-lg-12">
+          <div class="refillrx-head">
+          <h2 class="feature-head">Looking for a more simple experience?</h2>
+          <h3>Try refillRx, also availabe on Google Play and the App Store.</h3>
+        </div><!--col-lg-12-->
       </div><!--/.header -->
         </div><!--/.row -->
         <div class="row app-title">
@@ -340,4 +342,3 @@
     <script src="plugins/smoothscroll/SmoothScroll.min.js"></script>
     <script src="plugins/clickscroll.js"></script>
   </body>
-</html>
