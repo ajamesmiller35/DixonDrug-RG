@@ -1,4 +1,4 @@
-body{
+/*body{
     background-image: url("images/tin.png") !important;
     background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -19,12 +19,18 @@ body{
         display: block;
         left: 0;
         top: 0;
-        -webkit-background-size: unset;
-        -moz-background-size: unset;
-        -o-background-size: unset;
         background-size: 100% 100%;
     }
     
+}*/
+
+.background-image{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-image: url('images/tin.png');
+    background-size: 100% 100%;
+    z-index: -1;
 }
 
 @font-face{
@@ -109,9 +115,9 @@ nav{
     background-color: #34393a;
     width: 100%;
     border-bottom: 20px solid transparent;
-    -webkit-border-image: url(images/chalkboard-frame-dark.png) 30 stretch; /* Safari 3.1-5 */
-    -o-border-image: url(images/chalkboard-frame-dark.png) 30 stretch; /* Opera 11-12.1 */
-    border-image: url(images/chalkboard-frame-dark.png) 30 stretch;
+    background-image: url(images/wood-texture.jpg);
+    background-size: cover;
+    background-repeat: repeat;
     background-color: #34393a;
 }
 
@@ -203,7 +209,6 @@ li {
 .rg-info{
     font-family: 'Indie Flower', cursive;
     text-align: center;
-    margin-top: 25px;
 }
 
 .chalkboard{
@@ -220,13 +225,22 @@ li {
     -o-border-image: url(chalkboard-frame-dark.png) 5 5 5 5 stretch stretch;
     border-image: url(chalkboard-frame-dark.png) 5 5 5 5 stretch stretch;
     background-color: #34393a;*/
-    background-image: url(images/chalkboard-frame-dark.png);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+    background-image: url(images/wood-texture.jpg);
+    background-size: cover;
+    background-repeat: repeat;
     width: 90% !important;
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+.chalkboard-dark{
+    background-color: #34393a;
+}
+
+.chalkboard-dark-nav{
+    width: 100%;
+    background-color: #34393a;
 }
 
 #menu{
@@ -265,10 +279,6 @@ li {
     margin-left: auto;
     margin-top: 30px;
     margin-bottom: 30px;
-}
-
-.boyers-box{
-    margin-bottom: 50px;
 }
 
 .nav-chalkboard{
@@ -330,6 +340,10 @@ li {
 
 .boyers-box{
     background-color: white;
+}
+
+.chalkboard-boyer{
+    padding-bottom: 50px;
 }
 
 .logout-box{
