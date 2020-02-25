@@ -300,7 +300,7 @@
         <div class="row" id="hardware">
           <img id="dd-tv-logo" src="images/dd-tv-logo.png"/>
           <img src="images/division.png" class="division"/>
-          <img id="bargains-of-month" src="http://ww3.truevalue.com/Portals/0/bom/BOM_interior_0048761b-4a49-4677-815c-3b568e519790.jpg?v=414">
+          
         </div>
         </main><!-- /.container -->
         
