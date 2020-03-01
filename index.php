@@ -298,10 +298,37 @@
     <img src="images/division.png" class="division"/>
     
         <div class="row" id="hardware">
-          <img id="dd-tv-logo" src="images/dd-tv-logo.png"/>
-          <img src="images/division.png" class="division"/>
-          
+          <img id="dd-tv-logo" src="images/true-value-logo.png"/>
+          <h2 class="feature-head">Shop Our True Value Store:</h2>
         </div>
+          <div class="buttons-container row">
+            <div class="col-lg-4">
+              <a href="http://truevalue.shoplocal.com/truevalue/new_user_entry.aspx?StoreRef=26CEJH7H-JDG1-KSS9-TQGH-Z8NC8AMIA7C6&amp;forceview=y&amp;Adref=xx">
+              <div class="tr-button">
+                <img class="tr-button-icon" src="images/TVcurrentAd.png" alt="">
+                <p class="tr-button-text">SHOP OUR CURRENT AD</p>
+              </div>
+              </a>
+            </div>
+            <div class="col-lg-4">
+              <a href="https://rewards.truevalue.com/welcome.do">
+              <div class="tr-button">
+                <p class="tr-button-text-center button-top-text">REWARDS</p>
+                <p class="tr-button-text-center">JOIN/MANAGE YOUR ACCOUNT</p>
+              </div>
+              </a>
+            </div>
+            <div class="col-lg-4">
+              <a href="https://hosted.where2getit.com/truevalue/emailsignup.postlive.html?storeid=472&amp;postalcode=67879-7701&amp;StoreGUID=26CEJH7H-JDG1-KSS9-TQGH-Z8NC8AMIA7C6&amp;rewards=1">
+              <div class="tr-button">
+                <img class="tr-button-icon" src="images/emailOptinIcon.png" alt="">
+                <p class="tr-button-text">EMAIL SIGN UP</p>
+              </div>
+              </a>
+            </div> 
+          </div>
+          <img src="images/division.png" class="division"/>
+        
         </main><!-- /.container -->
         
 

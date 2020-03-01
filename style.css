@@ -436,6 +436,7 @@ h2{
 
 .blue-icon{
     width: 85%;
+    max-width: 300px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -741,4 +742,64 @@ a.lightbox img {
 .map{
     width: 100%;
     min-height: 300px;
+}
+
+.tr-button{
+    border: 3px solid black;
+    width: 100%;
+    height: 85px;
+}
+
+.tr-button-icon{
+    width: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 10px;
+}
+
+.tr-button-text{
+    text-align: center;
+    margin-bottom: 0;
+    text-decoration: none;
+    color: black;
+}
+
+.tr-button-text-center{
+    text-align: center;
+    margin-bottom: 0;
+    text-decoration: none;
+    color: black;
+}
+
+.button-top-text{
+    margin-top: 5px;
+}
+
+.buttons-container{
+    margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 1200px){
+    .tr-button-text-center{
+        font-size: .75em;
+    }
+    .button-top-text{
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width: 350px){
+    .tr-button-text{
+        font-size: .75em;
+    }
+    .tr-button-text-center{
+        font-size: .65em;
+    }
+}
+
+@media only screen and (max-width: 992px){
+    .tr-button{
+        margin-bottom: 20px;
+    }
 }

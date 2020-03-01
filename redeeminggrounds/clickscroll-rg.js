@@ -12,7 +12,7 @@
 
              var height = $("#rg-banner").height() + 15;
 
-             if ($(window).scrollTop() <= height && $('body').width() < 1100){
+             /*if ($(window).scrollTop() <= height && $('body').width() < 1100){
                 $('html, body').animate({
                     scrollTop: ($(target).offset().top - $("#rg-banner").height() - 350)
                   }, 1000);
@@ -31,7 +31,11 @@
                 $('html, body').animate({
                     scrollTop: ($(target).offset().top - $('#rg-banner').height() - 60)
                   }, 1000);
-             }
+             }*/
+
+             $('html, body').animate({
+              scrollTop: ($(target).offset().top - $('#nav-box').height())
+              }, 1000);
 
           });
 

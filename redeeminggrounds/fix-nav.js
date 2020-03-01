@@ -1,38 +1,26 @@
    
     $(document).ready(function(){
-        
-        var height = $("#rg-banner").height() + 15;
 
-        var pushNav = $('#nav-height').height() + 30;
-
-        console.log('top height: ' + height);
+        let navOffset = $('#nav-box').offset().top;
+        let navHeight = $('#nav-box').height();
     
         $(window).scroll(function(){
-            if ($(window).scrollTop() >= height) {
-                $('nav').addClass('nav-scrolled');
-                $('#rg-banner').addClass('rg-banner-scrolled');
-                $('#fixed-nav').removeClass('nav-chalkboard');
-                $('#chalkboard-main').removeClass('chalkboard');
-                $('.push-nav').css('height', pushNav);
-                $('#message-box').css('display', 'none');
-                $('#top img').css('display', 'block');
-                $('#back img').attr('src', 'images/back-chalk.png');
-                $('#back').removeClass('back-scrolled');
-
-                
-               
+            
+            if($(window).scrollTop() >= navOffset){
+                $('#nav-box').addClass('nav-box-scrolled');
+                $('#top').css('display', 'block');
+                $('#back-teal').addClass('hidden');
+                $('#back-white').removeClass('hidden');
+                $('.nav-li').addClass('nav-li-scrolled');
+                $('.nav-push').css('height', navHeight);
             }
-            else {
-                $('nav').removeClass('nav-scrolled');
-                $('#fixed-nav').addClass('nav-chalkboard');
-                $('#chalkboard-main').addClass('chalkboard');
-                $('#rg-banner').removeClass('rg-banner-scrolled');
-                $('.push-nav').css('height', '0px');
-                $('#message-box').css('display', 'block');
-                $('#top img').css('display', 'none');
-                $('#back img').attr('src', 'images/back.png');
-                $('#back').addClass('back-scrolled');
-                
+            else{
+                $('#nav-box').removeClass('nav-box-scrolled');
+                $('#top').css('display', 'none');
+                $('#back-teal').removeClass('hidden');
+                $('#back-white').addClass('hidden');
+                $('.nav-li').removeClass('nav-li-scrolled');
+                $('.nav-push').css('height', '0');
             }
         });
                 

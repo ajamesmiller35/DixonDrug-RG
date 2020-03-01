@@ -19,56 +19,34 @@
     <link rel="stylesheet" href="bootstrap-rg.css">
     <link rel="stylesheet" href="rgstyles.css">
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kalam:700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Syncopate:400,700" rel="stylesheet">
     <link rel="icon" href="images/rg-icon-green.png">
     <title>Redeeming Grounds Coffee</title>
   </head>
   <div class="background-image"></div><!--background-image-->
   <body>
-    <a href="javascript:void(0)" id="top"><img src="images/up.png"></a>
-    <a href="../index.php" id="back" class="back-scrolled"><img src="images/back.png"></a>
-    <div class="push-nav"></div>
+    <!--<a href="javascript:void(0)" id="top"><img src="images/up-arrow.png"></a>
+    <a href="../index.php" id="back-teal" class="back"><img src="images/back-arrow.png"></a>
+    <a href="../index.php" id="back-white" class="back hidden"><img src="images/back-arrow-white.png"></a>-->
     <div id="nav-height">
     <img id="rg-banner" src="images/rg-logo.png">
-    
     <div class="chalkboard" id="chalkboard-main">
       <div class="chalkboard-dark">
-        <nav class="navbar navbar-expand-lg navbar-dark" id="top-nav">
-          <div class="chalkboard-dark-nav">
-            <div class="burger-box">
-            <button class="navbar-toggler" id="toggle-button" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              </div>  
-            <div class="nav-chalkboard text-center" id="fixed-nav">
-              <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-                <ul class="navbar-nav mr-auto">
-                  <li class="nav-item collapse-me">
-                    <a class="nav-link scrollTo" href="#specials">Specials</a>
-                  </li>
-                  <li class="nav-divider">/</li>
-                  <li class="nav-item collapse-me">
-                    <a class="nav-link scrollTo" href="#menu">Menu</a>
-                  </li>
-                  <li class="nav-divider">/</li>
-                  <li class="nav-item collapse-me">
-                    <a class="nav-link scrollTo" href="#coffee">Our Coffee</a>
-                  </li>
-                  <li class="nav-divider">/</li>
-                  <li class="nav-item collapse-me">
-                    <a class="nav-link scrollTo" href="#events">Events</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            </div><!--chalkboard-dark-->
-            </nav>
-            <div id="message-box">
-            <div class="division"></div>
-            <p class="rg-info text-white h1" id="nav-message"></p>
+        <div class="nav-push"></div><!-- /.nav-push -->
+        <div id="nav-box" class="nav-box">
+          <ul class="nav-list">
+            <li class="nav-li"><a class="scrollTo" href="#specials">Specials</a></li>
+            <li class="nav-li"><a class="scrollTo" href="#menu">Menu</a></li>
+            <li class="nav-li"><a class="scrollTo" href="#coffee">Coffee</a></li>
+            <li class="nav-li"><a class="scrollTo" href="#events">Events</a></li>
+          </ul><!-- /.nav-list -->
+        </div><!--nav-box-->
+        <div id="message-box">
+          <div class="division"></div>
+          <p class="rg-info" id="nav-message"></p>
           </div>
-        </div><!--chalkboard-dark-->
+      </div><!--chalkboard-dark-->      
     </div><!--chalkboard-->
   </div><!--nav-height-->
     <div class="text-center">
@@ -159,7 +137,7 @@
     </div><!--chalkboard-->
     <div class="chalkboard footer">
       <div class="chalkboard-dark">
-        <div class="container">
+        <div id="footer-container" class="container">
           <div class="row">
             <div class="col-md-4">
               <h4 class="text-white footer-header">Redeeming Grounds Coffee:</h4>
@@ -210,7 +188,6 @@
     <script src="../plugins/smoothscroll/SmoothScroll.min.js"></script>
     <script src="fix-nav.js"></script>
     <script src="clickscroll-rg.js"></script>
-    <script src="collapse-rg.js"></script>
     <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
 
     <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
