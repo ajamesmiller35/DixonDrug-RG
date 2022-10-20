@@ -33,9 +33,9 @@
   </head>
 
   <body>
-    <a href="javascript:void(0)" id="top"><img id="up-white" src="images/up-white.png"></a>
   <div class="push"></div>
   <div id="top-nav">
+    <a href="javascript:void(0)" id="top"><img id="up-white" src="images/up-white.png"></a>
       <a class="top-logo" href="index.php"><img src="images/dixondrugglow.png" class="dd-top-logo"/></a>
     <nav class="navbar navbar-expand-lg navbar-dark navbar-fixed-top bg-light">
     <div class="burger-box">
@@ -58,13 +58,6 @@
           <li class="nav-item collapse-me">
             <a class="nav-link nav-link-pill scrollTo" href="#about">About</a>
           </li>
-          <!--<li class="nav-item">
-            <a class="nav-link scrollTo" href="#hardware">True Value Hardware</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link scrollTo" href="#coffeeshop">Coffee Shop</a>
-            <a class="nav-link" href="redeeminggrounds/index.html">Coffee Shop</a>
-          </li>-->
         </ul>
       </div>
     </div>
@@ -110,7 +103,7 @@
             <div class="col-sm-4 blue-icon-box">
                 <img class="blue-icon" src="images/delivery.png" alt="Delivery">
                 <h2 class="service-icon-header">Free Delivery!</h2>
-                <p>Free delivery to Tribune, Leoti, Syracuse, and Sharon Springs. If you live outside of these areas, we mail for free too!</p>
+                <p>Free delivery to Tribune, Leoti, Syracuse, and Sharon Springs. If you live outside of these areas, ask about getting your prescriptions mailed!</p>
             </div><!--/col-2 -->
             <div class="col-sm-4 blue-icon-box">
                 <img class="blue-icon" src="images/shopping.png" alt="Shopping">
@@ -150,7 +143,7 @@
             <div class="col-lg-4">
               <h2 class="service-header">Free Delivery</h2>
               <img class="service-photo" src="images/door.png"/>
-              <p>We deliver all of your meds or even any over-the-counter items you order for free every day. Availabe in Tribune, Leoti, Syracuse, and Sharon Springs. Traveling? We also mail to anywhere in the USA for free.</p>
+              <p>We deliver all of your meds or even any over-the-counter items you order for free every day. Availabe in Tribune, Leoti, Syracuse, and Sharon Springs. Traveling? Ask about getting your prescriptions mailed.</p>
             </div>
           </div><!--/.row-->
           <div class="row" id="locations">
@@ -160,7 +153,7 @@
     </div>
     <div class="row">
       <div class="col-lg-4">
-        <img class="store-photo" src="images/dd.png"/>
+        <img class="store-photo" src="images/dd-2022.png"/>
       </div>
       <div class="col-lg-4">
         <h2 class="service-header">Dixon Drug</h2>
@@ -177,7 +170,7 @@
     <img src="images/division.png" class="division"/>
     <div class="row">
       <div class="col-lg-4">
-        <img class="store-photo" src="images/wc.png"/>
+        <img class="store-photo" src="images/wc-drug-2022.png"/>
       </div>
       <div class="col-lg-4">
         <h2 class="service-header">Dixon Drug - Wallace County</h2>
@@ -193,11 +186,11 @@
     <img src="images/division.png" class="division"/>
     <div class="row">
       <div class="col-lg-4">
-      <img class="store-photo" src="images/hc.png"/>
+      <img class="store-photo" src="images/hc-drug-2022.png"/>
       </div>
       <div class="col-lg-4">
         <h2 class="service-header">Hamilton County Drug</h2>
-        <p>302 Ease Ave. A</p>
+        <p>302 East Ave. A</p>
         <p>Syracuse, KS 67878</p>
         <p>Phone: (620)384-7424</p>
         <p>Fax: (620)384-7525</p>
@@ -281,17 +274,6 @@
           <h1>About Dixon Drug:</h1>
         </div>
       </div>
-      <div class="row">
-      <div class="col-lg-6">
-        <h3 class="team-photo-title">Pharmacy Staff</h3>
-      <img class="team-photo" src="images/IMG_3865.jpg"/>
-    </div>
-    <div class="col-lg-6">
-    <h3 class="team-photo-title">Retail Staff</h3>
-      <img class="team-photo" src="images/IMG_3868.jpg"/>
-    </div>
-</div>
-    <img src="images/division.png" class="division"/>
     <div class="col-lg-12">
       <p>Founded in 1986, Great Plains Pharmacies, Inc. is aiming to serve our customers and patients with the quality service and care they deserve. Founded by Chris and Kellee Dixon, we pride ourselves in being a workplace that works hard, has fun, and serves our customers and patients with excellent quality care at all times.</p>
     </div>
@@ -337,11 +319,11 @@
 
 <div class="container" id="footer-container">
 <ul class="foote_bottom_ul_amrc">
-<li><a href="index.php">Home</a></li>
-<li><a href="services.php">Services</a></li>
-<li><a href="locations.php">Locations</a></li>
-<li><a href="refills.php">Refills</a></li>
-<li><a href="about.php">About</a></li>
+<li><a class="scrollTo" href="#carouselExampleControls">Home</a></li>
+<li><a class="scrollTo" href="#services">Services</a></li>
+<li><a class="scrollTo" href="#locations">Locations</a></li>
+<li><a class="scrollTo" href="#refills">Refills</a></li>
+<li><a class="scrollTo" href="#about">About</a></li>
 </ul>
 <!--foote_bottom_ul_amrc ends here-->
 <p class="text-center">Copyright&#169; Great Plains Pharmacies Inc. 2018. All rights reserved.</p>

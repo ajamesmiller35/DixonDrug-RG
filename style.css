@@ -1,12 +1,15 @@
 #top{
-    position: fixed;
+    position: absolute;
     z-index: 99999;
-    top: 5px;
+    top: 0;
     right: 0;
+    height: 100%;
 }
 
 #top img{
-    height: 50px;
+    margin-top: 25%;
+    margin-right: 15px;
+    height: 50%;
     display: none;
 }
 
@@ -89,10 +92,8 @@
 }
 
 .nav-link-pill:hover{
-    background-image: url(images/pill.png);
-    color: #0068b3 !important;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+    transform: scale(1.25);
+    text-decoration: underline;
     transition: .5s;
 }
 
@@ -103,10 +104,6 @@
 
 .nav-item a{
     box-sizing: border-box;
-}
-
-.nav-item a:hover{
-    
 }
 
 .grounds{
@@ -258,12 +255,6 @@
         margin-top: 50px;
         width: 95%;
     }
-    .nav-item a:hover{
-        background-image: none;
-        color: #FFF !important;
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-    }  
     .here{
         background-size: 150px 100%;
         background-position: center;
@@ -313,10 +304,6 @@
     text-align: center;
 }
 
-.bg-dark{
-    
-}
-
 .nav-blue{
     background-color: #0068b3;
     width: 100%;;
@@ -324,10 +311,6 @@
 
 .navbar{
     background-color: #0068b3 !important;
-}
-
-.navbar-dark{
- 
 }
 
 .container{
@@ -533,39 +516,11 @@ footer p {
 .mb10 { 
     padding-bottom:15px ;
 }
-.footer_ul_amrc { 
-    margin:0px; 
-    list-style-type: none; 
-    font-size:14px; 
-    padding:0px 0px 10px 0px ; }
-.footer_ul_amrc li {
-    padding:0px 0px 5px 0px;
-}
-.footer_ul_amrc li a{ 
-    color:white;
-}
-.footer_ul_amrc li a:hover{ 
-    color:#fff; text-decoration:none;
-}
 .fleft { 
     float:left;
 }
 .padding-right { 
     padding-right:10px; 
-}
-.footer_ul2_amrc {
-    margin:0px; 
-    list-style-type:none; 
-    padding:0px;
-}
-.footer_ul2_amrc li p { 
-    display:table; 
-}
-.footer_ul2_amrc li a:hover { 
-    text-decoration:none;
-}
-.footer_ul2_amrc li i { 
-    margin-top:5px;
 }
 
 .bottom_border { 
@@ -581,6 +536,7 @@ footer p {
 	margin-bottom: 10px;
 	margin-left: auto;
 }
+
 .foote_bottom_ul_amrc li { 
     display:inline;
 }
