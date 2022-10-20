@@ -58,13 +58,13 @@
           <li class="nav-item collapse-me">
             <a class="nav-link nav-link-pill scrollTo" href="#about">About</a>
           </li>
-          <li class="nav-item">
+          <!--<li class="nav-item">
             <a class="nav-link scrollTo" href="#hardware">True Value Hardware</a>
           </li>
           <li class="nav-item">
-            <!--<a class="nav-link scrollTo" href="#coffeeshop">Coffee Shop</a>-->
+            <a class="nav-link scrollTo" href="#coffeeshop">Coffee Shop</a>
             <a class="nav-link" href="redeeminggrounds/index.html">Coffee Shop</a>
-          </li>
+          </li>-->
         </ul>
       </div>
     </div>
@@ -295,7 +295,7 @@
     <div class="col-lg-12">
       <p>Founded in 1986, Great Plains Pharmacies, Inc. is aiming to serve our customers and patients with the quality service and care they deserve. Founded by Chris and Kellee Dixon, we pride ourselves in being a workplace that works hard, has fun, and serves our customers and patients with excellent quality care at all times.</p>
     </div>
-    <img src="images/division.png" class="division"/>
+    <!--<img src="images/division.png" class="division"/>
     
         <div class="row" id="hardware">
           <img id="dd-tv-logo" src="images/true-value-logo.png"/>
@@ -326,7 +326,7 @@
               </div>
               </a>
             </div> 
-          </div>
+          </div>-->
           <img src="images/division.png" class="division"/>
         
         </main><!-- /.container -->
